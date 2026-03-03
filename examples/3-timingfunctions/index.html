@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03 – Timing-Funktionen</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="../../mainPage/index.html" class="back-link">&larr; Zurück zur Übersicht</a>
+  <h1>Timing-Funktionen</h1>
+  <p class="description">
+    Klicke auf den Button, um alle Marker gleichzeitig zu starten.
+    Jeder nutzt eine andere Timing-Funktion – beobachte die Unterschiede
+    in Beschleunigung und Abbremsung. Erneut klicken startet die Animation neu.
+  </p>
+
+  <button class="trigger-btn" onclick="
+    document.body.classList.remove('running');
+    void document.body.offsetWidth;
+    document.body.classList.add('running');
+  ">
+    Animation starten
+  </button>
+
+  <div class="tracks">
+    <div class="track-row">
+      <div class="track-label">
+        <span class="track-name">linear</span>
+        <span class="track-hint">gleichmäßig</span>
+      </div>
+      <div class="track">
+        <div class="marker marker--linear"></div>
+      </div>
+    </div>
+
+    <div class="track-row">
+      <div class="track-label">
+        <span class="track-name">ease</span>
+        <span class="track-hint">Standardwert</span>
+      </div>
+      <div class="track">
+        <div class="marker marker--ease"></div>
+      </div>
+    </div>
+
+    <div class="track-row">
+      <div class="track-label">
+        <span class="track-name">ease-in</span>
+        <span class="track-hint">langsamer Start</span>
+      </div>
+      <div class="track">
+        <div class="marker marker--ease-in"></div>
+      </div>
+    </div>
+
+    <div class="track-row">
+      <div class="track-label">
+        <span class="track-name">ease-out</span>
+        <span class="track-hint">langsames Ende</span>
+      </div>
+      <div class="track">
+        <div class="marker marker--ease-out"></div>
+      </div>
+    </div>
+
+    <div class="track-row">
+      <div class="track-label">
+        <span class="track-name">ease-in-out</span>
+        <span class="track-hint">beides kombiniert</span>
+      </div>
+      <div class="track">
+        <div class="marker marker--ease-in-out"></div>
+      </div>
+    </div>
+
+    <div class="track-row">
+      <div class="track-label">
+        <span class="track-name">cubic-bezier</span>
+        <span class="track-hint">mit Überschwingen</span>
+      </div>
+      <div class="track">
+        <div class="marker marker--cubic"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

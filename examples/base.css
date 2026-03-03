@@ -1,0 +1,24 @@
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  color: #333;
+}
+a { color: #0066cc; }
+h1 { margin: 0.5rem 0; }
+h2 {
+  margin: 2rem 0 0.75rem;
+  color: #555;
+}
+.description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  max-width: 550px;
+  line-height: 1.5;
+}
+.note {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.75rem;
+}

@@ -1,0 +1,50 @@
+/*
+ * 02 – @keyframes
+ * Demonstriert: @keyframes mit from/to-Syntax, prozentbasierte Keyframes,
+ *               animation-name, animation-duration, animation-iteration-count
+ */
+.box {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  background: #3b82f6;
+}
+/* Animation 1 (from/to-Syntax)*/
+@keyframes pulse {
+  from { transform: scale(1); opacity: 1; }
+  to   { transform: scale(1.2); opacity: 0.7; }
+}
+.box--pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; /* Ping-Pong zwischen from und to */
+}
+/*Animation 2 (Prozent-Syntax)*/
+@keyframes slide-bounce {
+  0%   { transform: translateX(0); }
+  40%  { transform: translateX(200px); }
+  60%  { transform: translateX(160px); }  /* leichtes Zurückprallen */
+  80%  { transform: translateX(200px); }
+  100% { transform: translateX(0); }
+}
+.box--slide {
+  animation-name: slide-bounce;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+/*Animation 3 (endliche Wiederholungsanzahl)*/
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.box--spin {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  animation: spin 0.8s linear 3 forwards; /* dreht sich genau 3-mal */
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>01 – Transition-Grundlagen</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="../../mainPage/index.html" class="back-link">&larr; Zurück zur Übersicht</a>
+  <h1>Transition-Grundlagen</h1>
+  <p class="description">
+    Fahre mit der Maus über jede Box, um die Zustandsänderung zu sehen.
+    Die linke Spalte hat keine Transition – Änderungen erfolgen sofort.
+    Die rechte Spalte nutzt transition-property, transition-duration,
+    transition-timing-function und transition-delay für sanfte Übergänge.
+  </p>
+
+  <div class="comparison">
+    <!-- Ohne Transition -->
+    <div class="column without-transition">
+      <h2>Ohne Transition</h2>
+
+      <div class="demo-row">
+        <span class="label">Hintergrund</span>
+        <div class="box box--color"></div>
+      </div>
+
+      <div class="demo-row">
+        <span class="label">Skalierung</span>
+        <div class="box box--scale"></div>
+      </div>
+
+      <div class="demo-row">
+        <span class="label">Mehrere + Delay</span>
+        <div class="box box--multi"></div>
+      </div>
+    </div>
+
+    <!-- Mit Transition -->
+    <div class="column with-transition">
+      <h2>Mit Transition</h2>
+
+      <div class="demo-row">
+        <span class="label">Hintergrund</span>
+        <div class="box box--color"></div>
+      </div>
+
+      <div class="demo-row">
+        <span class="label">Skalierung</span>
+        <div class="box box--scale"></div>
+      </div>
+
+      <div class="demo-row">
+        <span class="label">Mehrere + Delay</span>
+        <div class="box box--multi"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

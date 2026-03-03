@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>04 – Animierte UI-Elemente</title>
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="../../mainPage/index.html" class="back-link">&larr; Zurück zur Übersicht</a>
+  <h1>Animierte UI-Elemente</h1>
+  <p class="description">
+    Praxisnahe Animationsmuster: ein Button mit Hover- und Klick-Feedback
+    (Transitionen), ein reiner CSS-Lade-Spinner (Keyframes) sowie Karten,
+    die mit gestaffelter Verzögerung eingeblendet werden (Keyframes + Transitionen).
+  </p>
+
+  <!-- A) Button -->
+  <section>
+    <h2>1 &middot; Animierter Button</h2>
+    <button class="btn">Hover &amp; Klick mich</button>
+    <p class="note">
+      Nutzt <code>transition</code> auf transform und box-shadow.
+      <code>:active</code> liefert Klick-Feedback.
+    </p>
+  </section>
+
+  <!-- B) Spinner -->
+  <section>
+    <h2>2 &middot; Lade-Spinner</h2>
+    <div class="spinner"></div>
+    <p class="note">
+      Ein einzelnes <code>div</code> mit <code>border-top-color</code> und
+      <code>@keyframes spin</code>, das unendlich rotiert.
+    </p>
+  </section>
+
+  <!-- C) Karten -->
+  <section>
+    <h2>3 &middot; Karten-Eingangsanimation</h2>
+    <div class="card-row">
+      <div class="card">
+        <h3>Karte Eins</h3>
+        <p>Wird sofort beim Laden eingeblendet und gleitet nach oben.</p>
+      </div>
+      <div class="card">
+        <h3>Karte Zwei</h3>
+        <p>Erscheint 150 ms nach der ersten Karte (animation-delay).</p>
+      </div>
+      <div class="card">
+        <h3>Karte Drei</h3>
+        <p>Erscheint 300 ms nach der ersten – erzeugt einen gestaffelten Effekt.</p>
+      </div>
+    </div>
+    <p class="note">
+      Jede Karte hebt sich beim Hover zusätzlich per <code>transition</code> an.
+    </p>
+  </section>
+</body>
+</html>
