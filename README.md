@@ -1,12 +1,10 @@
 # CSS Animationen und Transitionen – Demo-Repository
 
-**Autor:** [Name]
-**Datum:** [Datum]
-**Modul:** Web Engineering und Verteilte Systeme (B.Sc. Software Engineering, 4. Semester)
+**Modul:** Web Engineering 
 
 ## Zweck
 
-Dieses Repository enthält fünf eigenständige Beispiele, die CSS-Transitionen und -Animationen demonstrieren – von einfacher Eigenschafts-Interpolation bis hin zu mehrstufigen Keyframe-Sequenzen. Es dient als Begleitmaterial zu einer 10-minütigen Präsentation und kann direkt im Browser geöffnet werden, ohne Build-Schritt.
+Dieses Repository enthält fünf Beispiele, die CSS-Transitionen und Animationen demonstrieren.
 
 ## Beispiele
 
@@ -22,12 +20,3 @@ Dieses Repository enthält fünf eigenständige Beispiele, die CSS-Transitionen 
 
 1. Repository klonen oder herunterladen.
 2. `mainPage/index.html` in einem modernen Browser öffnen.
-3. Über die Übersichtsseite zu den einzelnen Beispielen navigieren.
-
-Jedes Beispiel besteht aus einer eigenständigen `index.html` und `style.css` – keine Build-Tools, Frameworks oder externe Abhängigkeiten nötig.
-
-## Quellen
-
-- [Platzhalter für Quelle 1]
-- [Platzhalter für Quelle 2]
-- [Platzhalter für Quelle 3]

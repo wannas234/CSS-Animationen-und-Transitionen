@@ -1,8 +1,3 @@
-/*
- * 05 – Komplexe Animationen
- * Demonstriert: mehrstufige Keyframes, animation-fill-mode,
- *               animation-direction, animation-delay, Verkettung
- */
 .box {
   width: 80px;
   height: 80px;
