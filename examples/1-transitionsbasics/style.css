@@ -34,5 +34,5 @@
 .with-transition .box--multi {
   transition:
     transform 0.4s ease,
-    background 0.6s ease-in ; /* 0.2s Verzögerung bei background */
+    background 0.6s ease-in ;
 }

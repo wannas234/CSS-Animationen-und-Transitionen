@@ -10,17 +10,10 @@
 <body>
   <a href="../../mainPage/index.html" class="back-link">&larr; Zurück zur Übersicht</a>
   <h1>Timing-Funktionen</h1>
-  <p class="description">
-    Klicke auf den Button, um alle Marker gleichzeitig zu starten.
-    Jeder nutzt eine andere Timing-Funktion – beobachte die Unterschiede
-    in Beschleunigung und Abbremsung. Erneut klicken startet die Animation neu.
-  </p>
-
   <button class="trigger-btn" onclick="
     document.body.classList.remove('running');
     void document.body.offsetWidth;
-    document.body.classList.add('running');
-  ">
+    document.body.classList.add('running');">
     Animation starten
   </button>
 

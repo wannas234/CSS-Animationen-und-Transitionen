@@ -14,25 +14,6 @@
   gap: 0.5rem;
   max-width: 600px;
 }
-.track-row {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.track-label {
-  min-width: 160px;
-  text-align: right;
-}
-.track-name {
-  display: block;
-  font-size: 0.85rem;
-  font-family: monospace;
-}
-.track-hint {
-  display: block;
-  font-size: 0.7rem;
-  color: #888;
-}
 .track {
   flex: 1;
   background: #e5e7eb;
@@ -61,7 +42,6 @@
   from { transform: translateX(0); }
   to   { transform: translateX(calc(100cqi - 32px)); }
 }
-/* Einzeleigenschaften, damit timing-function nicht überschrieben wird */
 .running .marker {
   animation-name: race;
   animation-duration: 2.5s;
@@ -72,7 +52,4 @@
 .marker--ease-in     { animation-timing-function: ease-in; }
 .marker--ease-out    { animation-timing-function: ease-out; }
 .marker--ease-in-out { animation-timing-function: ease-in-out; }
-.marker--cubic       {
-  /* Negativer Wert = Überschwingen am Anfang, >1 = Überschwingen am Ende */
-  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
+.marker--cubic       { animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);}

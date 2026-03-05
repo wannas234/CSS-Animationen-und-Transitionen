@@ -8,40 +8,12 @@
 @keyframes journey {
   0%   { transform: translateX(0) scale(1);     background: #3b82f6; }
   25%  { transform: translateX(150px) scale(1.2); background: #3b82f6; }
-  50%  { transform: translateX(150px) scale(1);   background: #f59e0b; } /* Farbwechsel in der Mitte */
+  50%  { transform: translateX(150px) scale(1);   background: #f59e0b; } 
   75%  { transform: translateX(0) scale(0.8);     background: #f59e0b; }
   100% { transform: translateX(0) scale(1);       background: #3b82f6; }
 }
 .box--journey { animation: journey 3s ease-in-out infinite; }
-/*B Fill-Mode und Direction*/
-@keyframes shift {
-  from { transform: translateX(0); opacity: 1; }
-  to   { transform: translateX(120px); opacity: 0.5; }
-}
-.fill-row {
-  display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
-}
-.fill-item { text-align: center; }
-.fill-label {
-  font-size: 0.7rem;
-  font-family: monospace;
-  color: #888;
-  margin-top: 0.4rem;
-}
-.box--sm {
-  width: 50px;
-  height: 50px;
-  border-radius: 4px;
-  background: #3b82f6;
-  animation: shift 2s ease 1;
-}
-.box--fill-none      { animation-fill-mode: none; }
-.box--fill-forwards  { animation-fill-mode: forwards; }
-.box--fill-backwards { animation-fill-mode: backwards; animation-delay: 1s; animation-direction: reverse; }
-.box--alt-reverse    { animation-direction: alternate-reverse; }
-/*C Verkettung mehrerer Animationen*/
+/*B Verkettung mehrerer Animationen*/
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50%      { transform: translateY(-15px); }

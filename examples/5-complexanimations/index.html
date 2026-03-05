@@ -13,60 +13,22 @@
   <p class="description">
     Fortgeschrittene Animationstechniken: mehrstufige Keyframes mit
     verschiedenen Eigenschaften, die sich an unterschiedlichen Stellen ändern,
-    animation-fill-mode- und animation-direction-Varianten sowie die
-    Verkettung mehrerer Animationen auf einem Element.
+    sowie die Verkettung mehrerer Animationen auf einem Element.
   </p>
-
-  <!-- A) Mehrstufige Keyframes -->
   <section>
-    <h2>1 &middot; Mehrstufige Keyframes</h2>
+    <h2>1. Mehrstufige Keyframes</h2>
     <div class="demo-area">
       <div class="box box--journey"></div>
     </div>
-    <p class="note">
-      Fünf Keyframe-Schritte (0%, 25%, 50%, 75%, 100%) – Transform und
-      Hintergrund ändern sich an unterschiedlichen Stellen und erzeugen
-      einen komplexen Pfad.
-    </p>
   </section>
-
-  <!-- B) Fill-Mode und Direction -->
   <section>
-    <h2>2 &middot; Fill-Mode &amp; Direction</h2>
-    <p class="note" style="margin-top: 0;">
-      Alle vier Boxen nutzen dieselben <code>@keyframes shift</code>.
-      Beobachte, was vor, während und nach der Animation passiert.
-    </p>
-    <div class="fill-row">
-      <div class="fill-item">
-        <div class="box box--sm box--fill-none"></div>
-        <div class="fill-label">fill-mode: none</div>
-      </div>
-      <div class="fill-item">
-        <div class="box box--sm box--fill-forwards"></div>
-        <div class="fill-label">fill-mode: forwards</div>
-      </div>
-      <div class="fill-item">
-        <div class="box box--sm box--fill-backwards"></div>
-        <div class="fill-label">backwards + 1s Delay</div>
-      </div>
-      <div class="fill-item">
-        <div class="box box--sm box--alt-reverse"></div>
-        <div class="fill-label">alternate-reverse</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- C) Verkettete Animationen -->
-  <section>
-    <h2>3 &middot; Verkettete Animationen</h2>
+    <h2>2. Verkettete Animationen</h2>
     <div class="demo-area">
       <div class="box box--chained"></div>
     </div>
     <p class="note">
-      Zwei unabhängige Animationen auf einem Element: <code>float</code> (2 s)
-      und <code>glow</code> (3 s). Unterschiedliche Dauern erzeugen ein
-      sich ständig veränderndes visuelles Muster.
+      Zwei unabhängige Animationen auf einem Element:float (2 s)
+      und glow (3 s).
     </p>
   </section>
 </body>
