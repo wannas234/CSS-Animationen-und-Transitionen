@@ -1,4 +1,4 @@
-# CSS Animationen und Transitionen – Demo-Repository
+# CSS Animationen und Transitionen 
 
 **Modul:** Web Engineering 
 
@@ -19,4 +19,4 @@ Dieses Repository enthält fünf Beispiele, die CSS-Transitionen und Animationen
 ## Nutzung
 
 1. Repository klonen oder herunterladen.
-2. `mainPage/index.html` in einem modernen Browser öffnen.
+2. `mainPage/index.html` in einem Browser öffnen.
